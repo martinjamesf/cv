@@ -1,199 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lead Experience Designer Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap">
+    <meta charset="utf-8">
+    <title>James Martin - UX Design Leader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <style>
         body {
-            margin: 0;
             font-family: 'Montserrat', sans-serif;
             color: #333;
-            background-color: #f7f7f7;
+            line-height: 1.6;
         }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
+        .navbar {
             background-color: #ffffff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .logo {
-            font-size: 1.5rem;
+        .navbar-brand {
             font-weight: 600;
-            color: #007bff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
+            font-size: 1.5rem;
             color: #333;
-            font-weight: 400;
+        }
+        .nav-link {
+            color: #333;
             transition: color 0.3s;
         }
-        nav ul li a:hover {
+        .nav-link:hover {
             color: #007bff;
         }
-        .hero {
-            background-color: #007bff;
+        .hero-section {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
             color: #ffffff;
-            padding: 100px 20px;
+            padding: 100px 0;
             text-align: center;
         }
-        .hero h1 {
-            font-size: 3rem;
+        .hero-section h1 {
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 20px;
         }
-        .hero p {
+        .hero-section p {
             font-size: 1.25rem;
             font-weight: 300;
-            max-width: 800px;
-            margin: 0 auto 40px;
         }
-        .hero a {
-            color: #007bff;
-            background-color: #ffffff;
-            padding: 15px 30px;
+        .hero-section a {
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 20px;
             border-radius: 50px;
-            text-transform: uppercase;
-            font-weight: 600;
             transition: background-color 0.3s;
         }
-        .hero a:hover {
-            background-color: #e0e0e0;
+        .hero-section a:hover {
+            background-color: #0056b3;
         }
-        .portfolio {
-            padding: 80px 0;
-        }
-        .portfolio h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
             text-align: center;
-            margin-bottom: 60px;
-        }
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
         }
         .portfolio-item {
-            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
             transition: transform 0.3s;
         }
         .portfolio-item img {
             width: 100%;
             height: auto;
             display: block;
-        }
-        .portfolio-item h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin: 20px;
-        }
-        .portfolio-item p {
-            font-size: 1rem;
-            font-weight: 300;
-            margin: 0 20px 20px;
+            transition: transform 0.3s;
         }
         .portfolio-item:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
-        footer {
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        .footer {
             background-color: #333;
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
         }
-        footer p {
-            margin: 0;
-        }
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin: 20px 0 0;
-        }
-        footer ul li {
-            margin: 0 10px;
-        }
-        footer ul li a {
+        .footer a {
             color: #ffffff;
-            font-size: 1.25rem;
             transition: color 0.3s;
         }
-        footer ul li a:hover {
+        .footer a:hover {
             color: #007bff;
         }
     </style>
 </head>
-<body>
 
-    <!-- Header Start -->
-    <header>
+<body>
+    <!-- Navigation Start -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="logo">UX Design Leader</div>
-            <nav>
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="index.html">James Martin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-align-justify"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:martin.jamesfrancis+website.com"><span class="ti-email"></span></a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
-    <!-- Header End -->
+    </nav>
+    <!-- Navigation End -->
 
     <!-- Hero Section Start -->
-    <section class="hero">
+    <section class="hero-section">
         <div class="container">
-            <h1>Leading UX Design for Business Success</h1>
-            <p>I'm a UX design leader with over 18+ years of experience. I'm passionate about crafting digital experiences that drive business success and delight users. My expertise includes strategy, end-to-end research and development, creative services from branding to interaction design, and the talent to develop designers and non-designers. Check out my portfolio to see how I can help your organization succeed.</p>
-            <a href="#portfolio">View My Work</a>
+            <h1>Experience Design Leadership</h1>
+            <p>Over 15 years of expertise in crafting digital experiences that drive business success and delight users.</p>
+            <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
         </div>
     </section>
     <!-- Hero Section End -->
 
     <!-- Portfolio Section Start -->
-    <section class="portfolio" id="portfolio">
+    <section class="section" id="portfolio">
         <div class="container">
-            <h2>Selected Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <h3>Strategic Design Overhaul</h3>
-                    <p>Led a complete redesign of a leading platform, resulting in a 20% increase in user engagement.</p>
+            <h2 class="section-title">Selected Work</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="images/strategy.jpg" alt="End-to-End R&D">
+                        <h3 class="text-center mt-3">End-to-End R&D</h3>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <h3>End-to-End R&D</h3>
-                    <p>Managed research and development initiatives that informed the UX strategy for a new product line.</p>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="images/creative.jpg" alt="Creative Research">
+                        <h3 class="text-center mt-3">Creative Research</h3>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <h3>Creative Services</h3>
-                    <p>Delivered branding and interaction design services that elevated the brand's market presence.</p>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="images/workshop.jpg" alt="Adjacent Services">
+                        <h3 class="text-center mt-3">Adjacent Services</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,17 +155,22 @@
     <!-- Portfolio Section End -->
 
     <!-- Footer Start -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> UX Design Leader. All rights reserved.</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/uxleader/" target="_blank"><i class="ti-linkedin"></i></a></li>
-                <li><a href="https://www.behance.net/uxleader" target="_blank"><i class="ti-layout-grid3-alt"></i></a></li>
-                <li><a href="https://github.com/uxleader" target="_blank"><i class="ti-github"></i></a></li>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> James Martin. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/martinjamesf/" target="_blank"><i class="ti-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://behance.net/martinjamesf/" target="_blank"><i class="ti-layout-grid3-alt"></i></a></li>
+                <li class="list-inline-item"><a href="https://vimeo.com/martinjamesf" target="_blank"><i class="ti-vimeo-alt"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/martinjamesf/" target="_blank"><i class="ti-github"></i></a></li>
             </ul>
         </div>
     </footer>
     <!-- Footer End -->
 
+    <!-- jQuery --> 
+    <script src="plugins/jQuery/jquery.min.js"></script> 
+    <!-- Bootstrap JS --> 
+    <script src="plugins/bootstrap/bootstrap.min.js"></script> 
 </body>
 </html>
