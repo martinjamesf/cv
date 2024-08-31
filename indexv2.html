@@ -2,21 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>James Martin - Curious Experience Design Intrapreneur</title>
+    <title>James Martin - UX Design Leader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- External Stylesheet Support-->
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .nav-link {
+            color: #333;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #007bff;
+        }
+        .hero-section {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        .hero-section a {
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+        .hero-section a:hover {
+            background-color: #0056b3;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #007bff;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navigation Start -->
-    <nav class="navbar navbar-expand-lg main-nav">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand logo" href="index.html">James Martin</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">James Martin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="ti-align-justify"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
@@ -31,68 +116,54 @@
     </nav>
     <!-- Navigation End -->
 
-    <!-- Main Content Start -->
-    <section class="section">
+    <!-- Hero Section Start -->
+    <section class="hero-section">
         <div class="container">
-            <!-- Hero Section -->
+            <h1>Experience Design Leadership</h1>
+            <p>Over 15 years of expertise in crafting digital experiences that drive business success and delight users.</p>
+            <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
             <div class="row">
-                <div class="col-12">
-                    <h1 class="display-4 mb-4">As an Experience Designer with <strong><script>document.write(new Date().getFullYear() - 2006)</script>+</strong> years of experience, I provide <a href="corpcomms.html">design strategy</a>, <a href="fpaint.html">creative solutions</a>, and <a href="workshops.html">process refinement</a> to those in need.</h1>
-                </div>
-            </div>
-            
-            <!-- Introduction Section -->
-            <div class="row mb-5">
-                <div class="col-12 col-md-9">
-                    <p class="lead">I'm also a curious intrapreneur that solves problems with creative solutions. I enjoy working with others and empowering them to grow. Please take a look at some of my favorite works. Don't hesitate to <a href="https://www.linkedin.com/in/martinjamesf/">contact me</a> to see more.</p>
-                </div>
-            </div>
-            
-            <!-- Portfolio Section -->
-            <div class="row">
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="inner-box text-center">
-                        <h3 class="h5">End-to-End R&amp;D</h3>
-                        <a href="corpcomms.html">
-                            <img src="images/strategy.jpg" alt="Portfolio image for end-to-end project example" class="img-fluid w-100">
-                        </a>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="images/strategy.jpg" alt="End-to-End R&D">
+                        <h3 class="text-center mt-3">End-to-End R&D</h3>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="inner-box text-center">
-                        <h3 class="h5">Creative Research</h3>
-                        <a href="fpaint.html">
-                            <img src="images/creative.jpg" alt="Portfolio image for creative research example" class="img-fluid w-100">
-                        </a>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="images/creative.jpg" alt="Creative Research">
+                        <h3 class="text-center mt-3">Creative Research</h3>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-5">
-                    <div class="inner-box text-center">
-                        <h3 class="h5">Adjacent Services</h3>
-                        <a href="workshops.html">
-                            <img src="images/workshop.jpg" alt="Portfolio image for workshop example" class="img-fluid w-100">
-                        </a>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="images/workshop.jpg" alt="Adjacent Services">
+                        <h3 class="text-center mt-3">Adjacent Services</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Main Content End -->
+    <!-- Portfolio Section End -->
 
     <!-- Footer Start -->
-    <footer class="footer bg-dark text-white">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; <script>document.write(new Date().getFullYear())</script> James Martin. All rights reserved.</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/martinjamesf/" target="_blank"><i class="ti-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="https://behance.net/martinjamesf/" target="_blank"><i class="ti-layout-grid3-alt"></i></a></li>
-                        <li class="list-inline-item"><a href="https://vimeo.com/martinjamesf" target="_blank"><i class="ti-vimeo-alt"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/martinjamesf/" target="_blank"><i class="ti-github"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> James Martin. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/martinjamesf/" target="_blank"><i class="ti-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://behance.net/martinjamesf/" target="_blank"><i class="ti-layout-grid3-alt"></i></a></li>
+                <li class="list-inline-item"><a href="https://vimeo.com/martinjamesf" target="_blank"><i class="ti-vimeo-alt"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/martinjamesf/" target="_blank"><i class="ti-github"></i></a></li>
+            </ul>
         </div>
     </footer>
     <!-- Footer End -->
@@ -101,7 +172,5 @@
     <script src="plugins/jQuery/jquery.min.js"></script> 
     <!-- Bootstrap JS --> 
     <script src="plugins/bootstrap/bootstrap.min.js"></script> 
-    <!-- Main Script --> 
-    <script src="js/script.js"></script>
 </body>
 </html>
