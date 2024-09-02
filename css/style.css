@@ -613,6 +613,16 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   border-color: #e8eefb;
 }
 
+input.password {
+  border-radius: 0px;
+  height: 45px;
+  width: 200px;
+  border-color: #e8eefb;
+}
+@media screen {
+  
+}
+
 .form-control:focus {
   box-shadow: none;
   border-color: #f44336;
@@ -784,6 +794,9 @@ textarea.form-control {
   }
   .media img {
     margin-bottom: 10px;
+  }
+  input.password{
+    width: 80%;
   }
 }
 
