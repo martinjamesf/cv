@@ -120,13 +120,11 @@
     <section class="hero-section">
         <div class="container">
             <h1>Experience Design Leadership</h1>
-            <p>With over <strong><script>document.write(new Date().getFullYear() - 2006)</script><sup>+</sup></strong> years of expertise in crafting impactful digital experiences that drive business success, and <strong><script>document.write(new Date().getFullYear() - 2019)</script><sup>+</sup></strong> in a leader role, I've developed high-performing teams that deliver strategic solutions that exceed expectations.</p>
-            <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+            <p>With over <script>document.write(new Date().getFullYear() - 2006)</script><sup>+</sup> years of expertise in crafting impactful digital experiences that drive business success, and <script>document.write(new Date().getFullYear() - 2019)</script><sup>+</sup></strong> in a leader role where I've developed high-performing teams that deliver strategic solutions that exceed expectations.</p>
             <!-- Password Protected Area-->
-            <h2>Enter the Password to Enable the Link</h2>
-
+            <h2 for="passwordInput">Enter a password to enable link</h2>
             <input type="password" id="passwordInput" placeholder="Enter password">
-            <button id="submitButton" disabled>Go to Link</button>
+            <button id="submitButton" disabled class="btn btn-primary">Explore Case Studies</button>
         
             <script>
                 // Set your password here
@@ -141,7 +139,7 @@
                     if (passwordInput.value === correctPassword) {
                         submitButton.disabled = false;
                         submitButton.onclick = function() {
-                            window.location.href = "https://www.example.com"; // Replace with your link
+                            window.location.href = "https://www.martinjamesf.com/case-studies.html"; // link to case study page
                         }
                     } else {
                         submitButton.disabled = true;
