@@ -120,8 +120,35 @@
     <section class="hero-section">
         <div class="container">
             <h1>Experience Design Leadership</h1>
-            <p>With over <strong><script>document.write(new Date().getFullYear() - 2006)</script><sup>+</sup></strong> years of expertise in crafting impactful digital experiences that drive business success, and <strong><script>document.write(new Date().getFullYear() - 2019)</script><sup>+</sup></strong> in leadership roles, I excel in developing high-performing teams and delivering strategic solutions that exceed expectations.</p>
+            <p>With over <strong><script>document.write(new Date().getFullYear() - 2006)</script><sup>+</sup></strong> years of expertise in crafting impactful digital experiences that drive business success, and <strong><script>document.write(new Date().getFullYear() - 2019)</script><sup>+</sup></strong> in a leader role, I've developed high-performing teams that deliver strategic solutions that exceed expectations.</p>
             <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+            <!-- Password Protected Area-->
+            <h2>Enter the Password to Enable the Link</h2>
+
+            <input type="password" id="passwordInput" placeholder="Enter password">
+            <button id="submitButton" disabled>Go to Link</button>
+        
+            <script>
+                // Set your password here
+                const correctPassword = "yourPassword";
+        
+                // Elements
+                const passwordInput = document.getElementById('passwordInput');
+                const submitButton = document.getElementById('submitButton');
+        
+                // Event listener for input
+                passwordInput.addEventListener('input', function() {
+                    if (passwordInput.value === correctPassword) {
+                        submitButton.disabled = false;
+                        submitButton.onclick = function() {
+                            window.location.href = "https://www.example.com"; // Replace with your link
+                        }
+                    } else {
+                        submitButton.disabled = true;
+                        submitButton.onclick = null;
+                    }
+                });
+            </script>
         </div>
     </section>
     <!-- Hero Section End -->
@@ -149,45 +176,7 @@
                         <h3 class="text-center mt-3">Adjacent Services</h3>
                     </div>
                 </div>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="portfolio-item">
-                        <img src="images/strategy.jpg" alt="End-to-End R&D">
-                        <h3 class="text-center mt-3">End-to-End R&D</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="portfolio-item">
-                        <img src="images/creative.jpg" alt="Creative Research">
-                        <h3 class="text-center mt-3">Creative Research</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="portfolio-item">
-                        <img src="images/workshop.jpg" alt="Adjacent Services">
-                        <h3 class="text-center mt-3">Adjacent Services</h3>
-                    </div>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="portfolio-item">
-                        <img src="images/strategy.jpg" alt="End-to-End R&D">
-                        <h3 class="text-center mt-3">End-to-End R&D</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="portfolio-item">
-                        <img src="images/creative.jpg" alt="Creative Research">
-                        <h3 class="text-center mt-3">Creative Research</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="portfolio-item">
-                        <img src="images/workshop.jpg" alt="Adjacent Services">
-                        <h3 class="text-center mt-3">Adjacent Services</h3>
-                    </div>
-                </div>
         </div>
     </section>
     <!-- Portfolio Section End -->
