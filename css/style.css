@@ -56,6 +56,14 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 15px;
+}
+
 /* Navbar */
 .navbar {
   background-color: #ffffff;
