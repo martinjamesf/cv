@@ -102,7 +102,7 @@ li {
   background: url('images/hero-bg.jpg') no-repeat center center/cover;
   color: #ffffff;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-section h1 {
