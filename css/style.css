@@ -96,12 +96,12 @@ li {
 .nav-link:hover {
   color: #007bff;
 }
-
-/* Hero Section */
+/* Sections */
+/* Hero */
 .hero-section {
   background-color: #001615;
   color: #FFC745;
-  padding: 100px 0;
+  padding: 80px 0 0 48px;
   text-align: left;
 }
 
@@ -130,10 +130,10 @@ li {
 
 /* Section Titles */
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-align: center;
+  margin:24px 0 0 40px;
+  text-align: left;
 }
+
 
 /* Portfolio Item */
 .portfolio-item {
