@@ -18,7 +18,6 @@ body {
 
 .primary-color {
   background-color: #001615;
-  color: #FFC745;
 }
 
 .secondary-color {
@@ -74,8 +73,8 @@ li {
 
 /* Navbar */
 .navbar {
-  background-color: #ffffff;
-  /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+  background-color: #001615;
+  color: #FFC745;
 }
 
 .navbar-brand {
@@ -100,8 +99,8 @@ li {
 
 /* Hero Section */
 .hero-section {
-  background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  color: #ffffff;
+  background-color: #001615;
+  color: #FFC745;
   padding: 100px 0;
   text-align: left;
 }
