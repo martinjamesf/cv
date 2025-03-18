@@ -125,6 +125,9 @@ li {
 .hero-section a:hover {
   background-color: #514017;
 }
+.hero-section img {
+  max-width: 72px;
+}
 
 /* Section Titles */
 .section-title {
