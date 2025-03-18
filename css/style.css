@@ -351,6 +351,10 @@ input.password {
     font-size: 32px;
     line-height: 1.2;
   }
+  h5, .h5, h6, .h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .banner .cd-headline {
     font-size: 32px;
     line-height: 42px;
