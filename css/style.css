@@ -22,13 +22,6 @@ h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #000A04;
   font-weight: 400;
 }
-.primary-color {
-  background-color: #001615;
-}
-
-.secondary-color {
-  background-color: #FFC745;
-}
 h1, .h1 {
   font-size: 2.5rem;
 }
@@ -69,7 +62,13 @@ ul {
 li {
   margin-bottom: 15px;
 }
+.primary-color {
+  background-color: #001615;
+}
 
+.secondary-color {
+  background-color: #FFC745;
+}
 /* Navbar */
 .navbar {
   background-color: #001615;
