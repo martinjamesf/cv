@@ -78,7 +78,6 @@ li {
 .navbar-brand {
   font-weight: 600;
   font-size: 1.5rem;
-  color: #333;
 }
 
 .navbar-nav .nav-link {
@@ -87,12 +86,11 @@ li {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #333;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #007bff;
+  color: #6D551E;
 }
 /* Sections */
 /* Hero */
