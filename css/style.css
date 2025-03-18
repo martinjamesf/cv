@@ -16,6 +16,12 @@ body {
   letter-spacing: 0.166667px;
 }
 
+/* Typography */
+h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'Work Sans', sans-serif;
+  color: #000A04;
+  font-weight: 400;
+}
 .primary-color {
   background-color: #001615;
 }
@@ -23,13 +29,6 @@ body {
 .secondary-color {
   background-color: #FFC745;
 }
-/* Typography */
-h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: 'Work Sans', sans-serif;
-  color: #000;
-  font-weight: 400;
-}
-
 h1, .h1 {
   font-size: 2.5rem;
 }
