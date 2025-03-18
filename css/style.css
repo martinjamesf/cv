@@ -97,6 +97,7 @@ li {
 /* Hero */
 .hero-section {
   background-color: #001615;
+  background-image:image(sr);
   padding: 80px 0 48px 0;
   text-align: left;
 }
