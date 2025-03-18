@@ -96,7 +96,6 @@ li {
 /* Hero */
 .hero-section {
   background-color: #001615;
-  color: #FFC745;
   padding: 80px 0 0 48px;
   text-align: left;
 }
@@ -105,23 +104,25 @@ li {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 20px;
+  color: #FFC745;
 }
 
 .hero-section p {
   font-size: 1.25rem;
   font-weight: 300;
+  color: #FFC745;
 }
 
 .hero-section a {
-  color: #ffffff;
-  background-color: #007bff;
+  color: #FFC745;
+  background-color: #514017;
   padding: 10px 20px;
   border-radius: 50px;
   transition: background-color 0.3s;
 }
 
 .hero-section a:hover {
-  background-color: #0056b3;
+  background-color: #514017;
 }
 
 /* Section Titles */
